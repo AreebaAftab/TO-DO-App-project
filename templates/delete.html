@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 17 00:26:22 2018
+
+@author: Areeba aftab
+"""
+
+{% include 'header.html' %}
+{% if request.method=='GET' %}
+    <form method="DELETE">
+    <h1>delete task</h1>
+    <input type="int" name="user" placeholder="id">
+    
+    <input type="submit" value="Save">
+    </form>
+{% elif ok %}
+    <h1>deleteData in MongoDb Database</h1>
+{% endif %}
